@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Noto Sans", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 25px;
+    padding-bottom: 5px;
+    border-bottom: solid #e0e0e0 1px;
+}
+
+.navbar-menu{
+    display: flex;
+    gap: 25px;
+    font-size: 15px;
+    align-items: center;
+}
+
+.navbar-menu p{
+    font-weight: 600;
+}
+
+.navbar-btns{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbar-logo img{
+    width: 180px;
+}
+
+.navbar-btns input{
+    padding: 10px 15px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.navbar__mobile{
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .navbar-menu, .navbar-btns{
+        display: none;
+    }
+
+    .navbar__mobile{
+        display: block;
+    }
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.search-input {
+    padding: 15px;
+    border: solid #e0e0e0 1px;
+    width: 50%;
+    border-radius: 25px;
+}
+
+.search-input input{
+    width: 90%;
+    border: none;
+    margin-left: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.search-input input::placeholder{
+    font-size: 16px;
+}
+
+.search-btn__btn{
+    padding: 15px 36px;
+    border: solid #34e0a1 1px;
+    border-radius: 25px;
+    margin-left: 10px;
+    background-color: #34e0a1;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.banner{
+    margin-top: 30px;
+    width: 70%;
+    text-align: center;
+}
+.banner-image{
+    background-color: #dcc8ff;
+    width: 100%;
+}
+
+.banner-image img{
+    width: 500px;
+}
+
+.outdoor {
+    display: flex;
+    justify-content: center;
+}
+
+.outdoor-con{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #f2ecf9;
+    width: 75%;
+    padding: 10px 0px;
+    border-radius: 20px;
+}
+
+.outdoor-image img{
+    height: 172px;
+    border-radius: 15px;
+    rotate: -4deg;
+}
+
+.content{
+    margin-top: 40px;
+}
+
+.content-title{
+    text-align: center;
+}
+
+.content-title h1{
+    font-size: 18px;
+}
+
+.content-list{
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    margin: 40px 0px;
+}
+
+.content-list .active{
+    border-bottom: solid black 2px;
+}
+
+.content-title h1 {
+    font-size: 42px;
+    font-weight: 800;
+}

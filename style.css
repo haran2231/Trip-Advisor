@@ -770,9 +770,33 @@ footer {
     margin-right: 10px;
   }
 
-  @media screen and (max-width:400px) {
-    .more-imagecard{
-      margin: 4px;
-    }
+  .more-imagecard__image img{
+    width: fit-content;
   }
+
+  .more-imagecard__image h4{
+    width: fit-content;
+  }
+
+ .more {
+  display: none;
+ }
+
+ .footer-social__cont, .footer-copy__copy{
+  margin: 30px;
+ }
+  
+}
+
+@media screen and (max-width:400px) {
+  .more-imagecard{
+    margin: 4px;
+  }
+
+  .search-input {
+    width: 76%;
+    margin-bottom: 15px;
+}
+
+
 }

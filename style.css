@@ -785,7 +785,20 @@ footer {
  .footer-social__cont, .footer-copy__copy{
   margin: 30px;
  }
-  
+ .more-imagecard__image::before {
+  content: "\2764";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 24px;
+  color: rgb(142 142 142);
+  z-index: 1;
+  /* border: solid black 2px; */
+  border-radius: 30px;
+  height: 30px;
+  padding: 0 3px;
+  background-color: #d5d1c1;
+}
 }
 
 @media screen and (max-width:400px) {

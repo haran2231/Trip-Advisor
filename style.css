@@ -110,12 +110,44 @@ input:focus {
   width: 87%;
   /* display: inline-block; */
   border-radius: 15px;
-  /* padding: 100px 25px; */
+  padding: 100px 0px;
   display: flex;
+}
+.bg-image {
+  width: 50%;
+  background-image: url("./images/home.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .banner-image img {
   width: 100%;
+}
+
+.banner-image__cont {
+  width: 100%;
+  margin-top: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: left;
+}
+
+.banner-image__cont p {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.banner-image__cont h1 {
+  font-size: 54px;
+}
+
+.banner-image__cont input {
+  border-radius: 24px;
+  padding: 14px 24px;
+  background-color: #301d49;
+  color: #fff;
+  border: none;
+  margin-top: 15px;
 }
 
 .outdoor {
@@ -201,9 +233,9 @@ input:focus {
 .stay-imagecard {
   display: flex;
   gap: 15px;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 10px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-around;
 }
 
@@ -257,7 +289,7 @@ input:focus {
   gap: 15px;
   margin-top: 10px;
   /* justify-content: space-around; */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .top-imagecard__image img {
@@ -274,7 +306,7 @@ input:focus {
 
 .top-imagecard__image {
   position: relative; /* Ensure positioning context */
-  width: 262px;
+  width: 285px;
 }
 
 .top-imagecard__image::before {
@@ -332,7 +364,7 @@ input:focus {
   gap: 15px;
   align-items: center;
   margin-top: 10px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-around;
 }
 
@@ -417,7 +449,7 @@ input:focus {
   /* width: 285px; */
   /* align-items: center; */
   margin-top: 10px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* justify-content: space-around; */
 }
 
@@ -497,57 +529,220 @@ input:focus {
 } */
 
 .traveller-main {
-    width: 100%; /* Set the total width of the section */
-    margin: 0 auto; /* Center the section horizontally */
-    background-color: antiquewhite;
+  width: 100%; /* Set the total width of the section */
+  margin: 0 auto; /* Center the section horizontally */
+  background-color: antiquewhite;
 }
 
 .traveller {
-    display: flex; /* Use flexbox for layout */
-    width: 80%;
-    justify-content: center;
-    margin: 0 10%;
+  display: flex; /* Use flexbox for layout */
+  width: 80%;
+  justify-content: center;
+  margin: 0 10%;
 }
 
 .traveller-one {
-    flex: 1; /* Take up remaining space */
-    /* padding: 20px; Add some padding */
-    padding: 65px 20px;
+  flex: 1; /* Take up remaining space */
+  /* padding: 20px; Add some padding */
+  padding: 65px 20px;
 }
 
 .traveller-two {
-    flex: 1; /* Take up remaining space */
-    background-image: url('./images/cardss.png'); /* Set image as background */
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the background image */
-    padding: 20px; /* Add some padding */
+  flex: 1; /* Take up remaining space */
+  background-image: url("./images/cardss.png"); /* Set image as background */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  padding: 20px; /* Add some padding */
 }
 
 .traveller-two img {
-    display: none; /* Hide the image element */
+  display: none; /* Hide the image element */
 }
 
-.traveller-one input{
-    background-color: black;
-    border: solid black 1px;
-    border-radius: 18px;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 18px;
-    padding: 8px 16px;
-    color: #fff;
-    margin-top: 10px;
+.traveller-one input {
+  background-color: black;
+  border: solid black 1px;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 8px 16px;
+  color: #fff;
+  margin-top: 10px;
 }
 
-.traveller-one h1{
-    font-size: 55px;
-    font-weight: 900;
-    line-height: 3.5rem;
-    margin-top: 10px;
+.traveller-one h1 {
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 3.5rem;
+  margin-top: 10px;
 }
 
-.traveller-one p{
-    font-size: 34px;
-    font-weight: 300;
-    margin-top: 10px;
+.traveller-one p {
+  font-size: 34px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #faf1ed;
+  margin-top: 40px;
+}
+
+.footer-section {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-section__two,
+.footer-section__three {
+  margin: 0 30px;
+}
+
+.footer-section__four {
+  margin: 0 10%;
+}
+
+.footer-section__one p {
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+
+.footer-section__two p {
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+
+.footer-section__three p {
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+
+.footer-section__four p {
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+
+.align-foot {
+  font-size: 18px !important;
+  margin-top: 10px;
+}
+
+.footer-section2__logo© {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-copy {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-selector {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 375px;
+  gap: 15px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-section2 {
+  margin: 0 182px;
+}
+
+.footer-logo img {
+  width: 43px;
+  margin-right: 10px;
+}
+
+.footer-social__cont {
+  width: 80%;
+}
+
+.fa-brands {
+  font-size: 25px !important;
+  margin: 0 10px;
+}
+
+.footer-copy__copy p {
+  font-size: 12px;
+}
+
+.footer-social__cont p {
+  font-size: 12px;
+  width: 75%;
+}
+
+.footer-selector__one select {
+  padding: 5px 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-selector__two select {
+  padding: 5px 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.mobile{
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .stay-imagecard,
+  .top-imagecard,
+  .asia-imagecard,
+  .more-imagecard {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .search-input {
+    width: 60%;
+  }
+
+  .outdoor-con {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .outdoor-btn__button {
+    margin: 0;
+  }
+
+  .traveller-two {
+    width: 340px;
+    height: 276px;
+    flex: none;
+  }
+
+  .traveller-one {
+    flex: none;
+    width: 100%;
+  }
+
+  .traveller {
+    flex-wrap: wrap;
+  }
+
+  .desktop {
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
 }

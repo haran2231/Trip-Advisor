@@ -1,247 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Trip Advisor</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- nav menu  -->
     <header class="navbar">
-        <div class="navbar-logo">
-            <img src="./images/logo.svg" alt="Trip Advisor">
-        </div>
-        <div class="navbar-menu">
-            <p>Discover</p>
-            <p>Trips</p>
-            <p>Review</p>
-            <p>More</p>
-        </div>
-        <div class="navbar-btns">
-            <i class="fa-solid fa-globe"></i>
-            <p>|</p>
-            <p>INR</p>
-            <input type="button" value="Sign in">
-        </div>
-        <div class="navbar__mobile">
-            <i class="fa-solid fa-bars"></i>
-        </div>
+      <div class="navbar-logo">
+        <img src="./images/logo.svg" alt="Trip Advisor" />
+      </div>
+      <div class="navbar-menu">
+        <p>Discover</p>
+        <p>Trips</p>
+        <p>Review</p>
+        <p>More</p>
+      </div>
+      <div class="navbar-btns">
+        <i class="fa-solid fa-globe"></i>
+        <p>|</p>
+        <p>INR</p>
+        <input type="button" value="Sign in" />
+      </div>
+      <div class="navbar__mobile">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </header>
 
-    <section class="content">
+    <main>
+      <section class="content">
         <div class="content-title">
-            <h1>Where to?</h1>
+          <h1>Where to?</h1>
         </div>
         <div class="content-list">
-            <p class="active">Search All</p>
-            <p>Hotels</p>
-            <p>Things to do</p>
-            <p>Resturant</p>
-            <p>Holiday Homes</p>
+          <p class="active">Search All</p>
+          <p>Hotels</p>
+          <p>Things to do</p>
+          <p>Resturant</p>
+          <p>Holiday Homes</p>
         </div>
-    </section>
+      </section>
 
-    <!-- search  -->
-    <section class="search">
+      <!-- search  -->
+      <section class="search">
         <div class="search-input">
-            <i class="fa-solid fa-magnifying-glass" style="color: #000000"></i> <input type="text" placeholder="Places to go, things to do, hotels...">
+          <i class="fa-solid fa-magnifying-glass" style="color: #000000"></i>
+          <input
+            type="text"
+            placeholder="Places to go, things to do, hotels..."
+          />
         </div>
         <div class="search-btn">
-            <input class="search-btn__btn" type="button" value="Search">
+          <input class="search-btn__btn" type="button" value="Search" />
         </div>
-    </section>
+      </section>
 
-    
-
-    <!-- banner  -->
-    <section class="banner">
+      <!-- banner  -->
+      <section class="banner">
         <div class="banner-image">
-            <div>
-                <p>Powered by AI</p>
-                <h1>Build a trip in minutes</h1>
-                <h4>Get a personalised itinerary just for you, guided by traveller tips and reviews.</h4>
-                <input type="button" value="Start a trip with AI">
-            </div>
-            <div>
-                <img src="./images/home.png" alt="text">
-            </div>
+          <div class="banner-image__cont">
+            <p>Powered by AI</p>
+            <h1>Build a trip in minutes</h1>
+            <h4>
+              Get a personalised itinerary just for you, guided by traveller
+              tips and reviews.
+            </h4>
+            <input type="button" value="Start a trip with AI" />
+          </div>
+          <div class="bg-image">
+            <!-- <img src="./images/home.png" alt="text" /> -->
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- outdoor  -->
-    <section class="outdoor">
+      <!-- outdoor  -->
+      <section class="outdoor">
         <div class="outdoor-con">
-            <div class="outdoor-image">
-                <img src="./images/outdoor.jpg" alt="">
-            </div>
-            <div class="outdoor-content">
-                <h2>An Outdoor lover's guide to Cairns</h2>
-                <p>White-water rafting, epic hikes, and endless waterfalls await in and around Cairns.</p>
-            </div>
-            <div class="outdoor-btn">
-                <input class="outdoor-btn__button" type="button" value="Read Now">
-            </div>
+          <div class="outdoor-image">
+            <img src="./images/outdoor.jpg" alt="" />
+          </div>
+          <div class="outdoor-content">
+            <h2>An Outdoor lover's guide to Cairns</h2>
+            <p>
+              White-water rafting, epic hikes, and endless waterfalls await in
+              and around Cairns.
+            </p>
+          </div>
+          <div class="outdoor-btn">
+            <input class="outdoor-btn__button" type="button" value="Read Now" />
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- stay  -->
-    <section class="stay">
+      <!-- stay  -->
+      <section class="stay">
         <div class="stay-content">
-            <h2 class="stay-content__title">Stay somewhere award-winning</h2>
-            <p class="stay-content__para">2024’s Travellers’ Choice Awards Best of the Best Hotels</p>
+          <h2 class="stay-content__title">Stay somewhere award-winning</h2>
+          <p class="stay-content__para">
+            2024’s Travellers’ Choice Awards Best of the Best Hotels
+          </p>
         </div>
         <div class="stay-imagecard">
-            <div class="stay-imagecard__image">
-                <img src="./images/1.jpg" alt="">
-                <h2>Top Hotels</h2>
-            </div>
-            <div class="stay-imagecard__image">
-                <img src="./images/2.jpg" alt="">
-                <h2>All Inclusive Hotels</h2>
-            </div>
-            <div class="stay-imagecard__image">
-                <img src="./images/3.jpg" alt="">
-                <h2>Family Friendly Hotel</h2>
-            </div>
-            <div class="stay-imagecard__image">
-                <img src="./images/4.jpg" alt="">
-                <h2>Luxury Hotel</h2>
-            </div>
+          <div class="stay-imagecard__image">
+            <img src="./images/1.jpg" alt="" />
+            <h2>Top Hotels</h2>
+          </div>
+          <div class="stay-imagecard__image">
+            <img src="./images/2.jpg" alt="" />
+            <h2>All Inclusive Hotels</h2>
+          </div>
+          <div class="stay-imagecard__image">
+            <img src="./images/3.jpg" alt="" />
+            <h2>Family Friendly Hotel</h2>
+          </div>
+          <div class="stay-imagecard__image">
+            <img src="./images/4.jpg" alt="" />
+            <h2>Luxury Hotel</h2>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- top experinece  -->
-    <section class="top">
+      <!-- top experinece  -->
+      <section class="top">
         <div class="top-content">
-            <h2 class="top-content__title">Top experiences on Tripadvisor</h2>
-            <p class="top-content__para">The best tours, activities and tickets</p>
+          <h2 class="top-content__title">Top experiences on Tripadvisor</h2>
+          <p class="top-content__para">
+            The best tours, activities and tickets
+          </p>
         </div>
         <div class="top-imagecard">
-            <div class="top-imagecard__image">
-                <img src="./images/5.jpg" alt="">
-                <h4>All Inclusive Ubudu Tours</h4>
-                <p><img src="./images/circle (1).png" style="width: 14px;" alt=""><img src="./images/circle (1).png" style="width: 14px;" alt=""><img src="./images/circle (1).png" style="width: 14px;" alt=""><img src="./images/circle (1).png" style="width: 14px;" alt=""><img src="./images/circle (1).png" style="width: 14px;" alt="">  <span>10, 072</span></p>
-                <p>from ₹7,699 per adult</p>
-            </div>
-            <div class="top-imagecard__image">
-                <img src="./images/6.jpg" alt="">
-                <h4>Tokyo 6hr Private Tour with Government-Licensed Guide</h4>
-                <p><img src="./images/circle (1).png" style="width: 14px;" alt=""><img src="./images/circle (1).png" style="width: 14px;" alt=""><img src="./images/circle (1).png" style="width: 14px;" alt=""><img src="./images/circle (1).png" style="width: 14px;" alt=""><img src="./images/circle (1).png" style="width: 14px;" alt="">  <span>10, 072</span></p>
-                <p>from ₹7,699 per adult</p>
-            </div>
-            <div class="top-imagecard__image">
-                <img src="./images/7.jpg" alt="">
-                <h4>Lion City Bike Tour</h4>
-                <p><img src="./images/circle (1).png" style="width: 14px;" alt=""><img src="./images/circle (1).png" style="width: 14px;" alt=""><img src="./images/circle (1).png" style="width: 14px;" alt=""><img src="./images/circle (1).png" style="width: 14px;" alt=""><img src="./images/circle (1).png" style="width: 14px;" alt="">  <span>10, 072</span></p>
-                <p>from ₹7,699 per adult</p>
-            </div>
-            <div class="top-imagecard__image">
-                <img src="./images/8.jpg" alt="">
-                <h4>Private Taj Mahal Tour from delhi by car</h4>
-                <p><img src="./images/circle (1).png" style="width: 14px;" alt=""><img src="./images/circle (1).png" style="width: 14px;" alt=""><img src="./images/circle (1).png" style="width: 14px;" alt=""><img src="./images/circle (1).png" style="width: 14px;" alt=""><img src="./images/circle (1).png" style="width: 14px;" alt="">  <span>10, 072</span></p>
-                <p>from ₹7,699 per adult</p>
-            </div>
+          <div class="top-imagecard__image">
+            <img src="./images/5.jpg" alt="" />
+            <h4>All Inclusive Ubudu Tours</h4>
+            <p>
+              <img
+                src="./images/circle (1).png"
+                style="width: 14px"
+                alt=""
+              /><img
+                src="./images/circle (1).png"
+                style="width: 14px"
+                alt=""
+              /><img
+                src="./images/circle (1).png"
+                style="width: 14px"
+                alt=""
+              /><img
+                src="./images/circle (1).png"
+                style="width: 14px"
+                alt=""
+              /><img src="./images/circle (1).png" style="width: 14px" alt="" />
+              <span>10, 072</span>
+            </p>
+            <p>from ₹7,699 per adult</p>
+          </div>
+          <div class="top-imagecard__image">
+            <img src="./images/6.jpg" alt="" />
+            <h4>Tokyo 6hr Private Tour with Government-Licensed Guide</h4>
+            <p>
+              <img
+                src="./images/circle (1).png"
+                style="width: 14px"
+                alt=""
+              /><img
+                src="./images/circle (1).png"
+                style="width: 14px"
+                alt=""
+              /><img
+                src="./images/circle (1).png"
+                style="width: 14px"
+                alt=""
+              /><img
+                src="./images/circle (1).png"
+                style="width: 14px"
+                alt=""
+              /><img src="./images/circle (1).png" style="width: 14px" alt="" />
+              <span>10, 072</span>
+            </p>
+            <p>from ₹7,699 per adult</p>
+          </div>
+          <div class="top-imagecard__image">
+            <img src="./images/7.jpg" alt="" />
+            <h4>Lion City Bike Tour</h4>
+            <p>
+              <img
+                src="./images/circle (1).png"
+                style="width: 14px"
+                alt=""
+              /><img
+                src="./images/circle (1).png"
+                style="width: 14px"
+                alt=""
+              /><img
+                src="./images/circle (1).png"
+                style="width: 14px"
+                alt=""
+              /><img
+                src="./images/circle (1).png"
+                style="width: 14px"
+                alt=""
+              /><img src="./images/circle (1).png" style="width: 14px" alt="" />
+              <span>10, 072</span>
+            </p>
+            <p>from ₹7,699 per adult</p>
+          </div>
+          <div class="top-imagecard__image">
+            <img src="./images/8.jpg" alt="" />
+            <h4>Private Taj Mahal Tour from delhi by car</h4>
+            <p>
+              <img
+                src="./images/circle (1).png"
+                style="width: 14px"
+                alt=""
+              /><img
+                src="./images/circle (1).png"
+                style="width: 14px"
+                alt=""
+              /><img
+                src="./images/circle (1).png"
+                style="width: 14px"
+                alt=""
+              /><img
+                src="./images/circle (1).png"
+                style="width: 14px"
+                alt=""
+              /><img src="./images/circle (1).png" style="width: 14px" alt="" />
+              <span>10, 072</span>
+            </p>
+            <p>from ₹7,699 per adult</p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- asia  -->
+      <!-- asia  -->
 
-    <section class="asia">
+      <section class="asia">
         <div class="asia-content">
-            <h2 class="asia-content__title">Asia’s best culinary hotspots</h2>
-            <p class="asia-content__para">From izakayas in Japan to hawker centres in Singapore</p>
+          <h2 class="asia-content__title">Asia’s best culinary hotspots</h2>
+          <p class="asia-content__para">
+            From izakayas in Japan to hawker centres in Singapore
+          </p>
         </div>
         <div class="asia-imagecard">
-            <div class="asia-imagecard__image">
-                <img src="./images/9.jpg" alt="">
-                <h4>Hanoi, Vietanam</h4>
-            </div>
-            <div class="asia-imagecard__image">
-                <img src="./images/10.jpg" alt="">
-                <h4>Bangok, Thaioland</h4>
-            </div>
-            <div class="asia-imagecard__image">
-                <img src="./images/11.jpg" alt="">
-                <h4>Hong Kong, china</h4>
-            </div>
-            <div class="asia-imagecard__image">
-                <img src="./images/12.jpg" alt="">
-                <h4>Singapore, Singapore</h4>
-            </div>
+          <div class="asia-imagecard__image">
+            <img src="./images/9.jpg" alt="" />
+            <h4>Hanoi, Vietanam</h4>
+          </div>
+          <div class="asia-imagecard__image">
+            <img src="./images/10.jpg" alt="" />
+            <h4>Bangok, Thaioland</h4>
+          </div>
+          <div class="asia-imagecard__image">
+            <img src="./images/11.jpg" alt="" />
+            <h4>Hong Kong, china</h4>
+          </div>
+          <div class="asia-imagecard__image">
+            <img src="./images/12.jpg" alt="" />
+            <h4>Singapore, Singapore</h4>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- more  -->
-    <section class="more">
+      <!-- more  -->
+      <section class="more">
         <div class="more-content">
-            <h2 class="more-content__title">More to Explore</h2>
+          <h2 class="more-content__title">More to Explore</h2>
         </div>
         <div class="more-imagecard">
-            <div class="more-imagecard__image">
-                <img src="./images/13.jpg" alt="">
-                <h4>Hong Kong's best hits: Find the perfect day itinerary</h4>
-            </div>
-            <div class="more-imagecard__image">
-                <img src="./images/14.jpg" alt="">
-                <h4>8 lesser-known spots for the best Sydney harbour views</h4>
-            </div>
-            <div class="more-imagecard__image">
-                <img src="./images/15.jpg" alt="">
-                <h4>3 days in Osaka: The perfect itinerary</h4>
-            </div>
+          <div class="more-imagecard__image">
+            <img src="./images/13.jpg" alt="" />
+            <h4>Hong Kong's best hits: Find the perfect day itinerary</h4>
+          </div>
+          <div class="more-imagecard__image">
+            <img src="./images/14.jpg" alt="" />
+            <h4>8 lesser-known spots for the best Sydney harbour views</h4>
+          </div>
+          <div class="more-imagecard__image">
+            <img src="./images/15.jpg" alt="" />
+            <h4>3 days in Osaka: The perfect itinerary</h4>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- designation  -->
+      <!-- designation  -->
 
-    <section class="stay designation">
+      <section class="stay designation">
         <div class="stay-content">
-            <h2 class="stay-content__title">Top destinations for your next holiday</h2>
-            <p class="stay-content__para">Here's where your fellow travellers are headed</p>
+          <h2 class="stay-content__title">
+            Top destinations for your next holiday
+          </h2>
+          <p class="stay-content__para">
+            Here's where your fellow travellers are headed
+          </p>
         </div>
         <div class="stay-imagecard">
-            <div class="stay-imagecard__image">
-                <img src="./images/16.jpg" alt="">
-                <h2>Top Hotels</h2>
-            </div>
-            <div class="stay-imagecard__image">
-                <img src="./images/17.jpg" alt="">
-                <h2>All Inclusive Hotels</h2>
-            </div>
-            <div class="stay-imagecard__image">
-                <img src="./images/18.jpg" alt="">
-                <h2>Family Friendly Hotel</h2>
-            </div>
-            <div class="stay-imagecard__image">
-                <img src="./images/19.jpg" alt="">
-                <h2>Luxury Hotel</h2>
-            </div>
+          <div class="stay-imagecard__image">
+            <img src="./images/16.jpg" alt="" />
+            <h2>Top Hotels</h2>
+          </div>
+          <div class="stay-imagecard__image">
+            <img src="./images/17.jpg" alt="" />
+            <h2>All Inclusive Hotels</h2>
+          </div>
+          <div class="stay-imagecard__image">
+            <img src="./images/18.jpg" alt="" />
+            <h2>Family Friendly Hotel</h2>
+          </div>
+          <div class="stay-imagecard__image">
+            <img src="./images/19.jpg" alt="" />
+            <h2>Luxury Hotel</h2>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="traveller-main">
+      <section class="traveller-main">
         <div class="traveller">
-            <div class="traveller-one">
-                <img src="./images/badge.svg" alt="">
-                <h1>Travellers' Choice Awards Best of the Best</h1>
-                <p>Among our top 1% of places, stays, eats, and experiences—decided by you.</p>
-                <input type="button" value="See the winners">
-            </div>
-            <div class="traveller-two">
-                <img src="./images/cardss.png" alt="">
-            </div>
+          <div class="traveller-one">
+            <img src="./images/badge.svg" alt="" />
+            <h1>Travellers' Choice Awards Best of the Best</h1>
+            <p>
+              Among our top 1% of places, stays, eats, and experiences—decided
+              by you.
+            </p>
+            <input type="button" value="See the winners" />
+          </div>
+          <div class="traveller-two">
+            <img src="./images/cardss.png" alt="" />
+          </div>
         </div>
-    </section>
-</body>
+      </section>
+    </main>
 
+    <!-- footer  -->
+    <footer class="desktop">
+      <div class="footer-section">
+        <div class="footer-section__one">
+          <p class="align-foot">About Tripadvisor</p>
+          <p></p>
+          <p>About Us</p>
+          <p>Press</p>
+          <p>Resources and Policies</p>
+          <p>Careers</p>
+          <p>Trust & Safety</p>
+          <p>Contact us</p>
+          <p>Accessibility Statement</p>
+        </div>
+        <div class="footer-section__two">
+          <p class="align-foot">Explore</p>
+          <p></p>
+          <p>Write a review</p>
+          <p>Add a Place</p>
+          <p>Join</p>
+          <p>Travellers' Choice</p>
+          <p>GreenLeaders</p>
+          <p>Help Centre</p>
+          <p>Travel Articles</p>
+        </div>
+        <div class="footer-section__three">
+          <p class="align-foot">Do Business With Us</p>
+          <p></p>
+          <p>Owners & DMO/CVB</p>
+          <p>Business Advantage</p>
+          <p>Sponsored Placements</p>
+          <p>Access our Content API</p>
+
+          <p class="align-foot">Get The App</p>
+          <p></p>
+          <p>iPhone App</p>
+          <p>Android App</p>
+        </div>
+        <div class="footer-section__four">
+          <p class="align-foot">Tripadvisor Sites</p>
+          <p></p>
+          <p>Book tours and attraction tickets on Viator</p>
+        </div>
+      </div>
+
+      <div class="footer-section2">
+        <div class="footer-section2__logo&copy">
+          <div class="footer-logo">
+            <img src="./images/lo.svg" alt="" />
+          </div>
+          <div class="footer-copy">
+            <div class="footer-copy__copy">
+              <p>© 2024 Tripadvisor LLC All rights reserved.</p>
+              <p>
+                <span>Terms of use</span> <span>Terms of use</span>
+                <span>Terms of use</span> <span>Terms of use</span>
+                <span>Terms of use</span>
+              </p>
+            </div>
+            <div class="footer-selector">
+              <div class="footer-selector__one">
+                <select id="cars" name="cars">
+                  <option value="volvo">INR</option>
+                  <option value="saab">USD</option>
+                  <option value="fiat">EURO</option>
+                  <option value="audi">DOLLAR</option>
+                </select>
+              </div>
+              <div class="footer-selector__two">
+                <select id="cars" name="cars">
+                  <option value="volvo">India</option>
+                  <option value="saab">USA</option>
+                  <option value="fiat">UK</option>
+                  <option value="audi">USA</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-social">
+          <div class="footer-social__cont">
+            <p>
+              This is the version of our website addressed to speakers of
+              English in India. If you are a resident of another country or
+              region, please select the appropriate version of Tripadvisor for
+              your country or region in the drop-down menu. more
+            </p>
+          </div>
+          <div class="footer-social__copy">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="mobile">
+      <div>
+        <p>About Tripadvisor</p>
+        <p>Explore</p>
+        <p>Do Business With Us</p>
+        <p>Get The App</p>
+        <p>Tripadvisor Sites</p>
+      </div>
+
+      <div>
+        <select id="cars" name="cars">
+          <option value="volvo">INR</option>
+          <option value="saab">USD</option>
+          <option value="fiat">EURO</option>
+          <option value="audi">DOLLAR</option>
+        </select>
+      </div>
+      <div class="footer-selector__two">
+        <select id="cars" name="cars">
+          <option value="volvo">India</option>
+          <option value="saab">USA</option>
+          <option value="fiat">UK</option>
+          <option value="audi">USA</option>
+        </select>
+      </div>
+
+      <div class="footer-social__copy">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+
+      <div class="footer-copy__copy">
+        <p>© 2024 Tripadvisor LLC All rights reserved.</p>
+        <p>
+          <span>Terms of use</span> <span>Terms of use</span>
+          <span>Terms of use</span> <span>Terms of use</span>
+          <span>Terms of use</span>
+        </p>
+      </div>
+
+      <div class="footer-social__cont">
+        <p>
+          This is the version of our website addressed to speakers of English in
+          India. If you are a resident of another country or region, please
+          select the appropriate version of Tripadvisor for your country or
+          region in the drop-down menu. more
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
